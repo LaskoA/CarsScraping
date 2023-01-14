@@ -36,4 +36,4 @@ if __name__ == "__main__":
     start = time.time()
     check_wiki()
     end = time.time() - start
-    print(f'total time is: {end}')
+    print(f'Scraping time: {end} seconds.')

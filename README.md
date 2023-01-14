@@ -1,7 +1,8 @@
 # Cars scraping
 There is a file car.csv with some random card models inside. My idea was to search automatically for those cars in 
-Wikipedia, get production years and print them. File regular.py perform synchronous search, fast.py - asynchronous. 
-Unfortunately, their speed is equal... 
+Wikipedia, get production years and print them. File regular.py performs synchronous search with Selenium (around 34 
+seconds), async.py - 
+asynchronous with BeautifulSoup (around 7 seconds).
 ## Installation
 
 Python3 must be installed
@@ -22,5 +23,5 @@ Virtual environment install for Mac:
 
 pip install -r requirements.txt  
 
-Put proper path to Chrome Web Driver on your PC for both files.
+Put proper path to Chrome Web Driver on your PC for regular.py (line 11).
 ```
