@@ -1,15 +1,7 @@
 import asyncio
-import csv
-import json
 import time
 import aiohttp
 from bs4 import BeautifulSoup
-
-
-async def save_product(book_name, product_info):
-    json_file_name = book_name.replace(' ', '_')
-    with open(f'data/{json_file_name}.json', 'w') as book_file:
-        json.dump(product_info, book_file)
 
 
 async def scrape(url):
